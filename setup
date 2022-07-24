@@ -1,0 +1,24 @@
+Implementation:
+1) Bring up a virtual machine host environment using Virtualbox and Ubuntu 20.04, or install Ubuntu 20.04 standalone on a dedicated host machine. See instructions here for help with this step.
+
+2) Clone the github repository created from the github classroom link. This will create an empty repository. Don’t follow the instructions on the associated github page to add a README commit. Instead fill with template content using the git commands below inside the repository:
+
+
+git remote add assignments-base https://github.com/cu-ecen-aeld/aesd-assignments.git
+
+This command specifies the base repository at https://github.com/cu-ecen-aeld/aesd-assignments with example starter code
+
+
+git fetch assignments-base
+
+This command pulls the content locally to match the latest status at https://github.com/cu-ecen-aeld/aesd-assignments 
+
+
+git merge assignments-base/master
+
+This command makes your master branch match the master branch of   https://github.com/cu-ecen-aeld/aesd-assignments
+
+
+git submodule update --init --recursive
+
+This command clones the assignment-autotest submodule and nested git repositories
